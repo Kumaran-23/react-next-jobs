@@ -36,6 +36,15 @@ function Navbar() {
                 Sign Up
               </button>
             </Link> */}
+
+            {isLoggedIn && (
+            <Link href="/jobs/new">
+              <button className="btn rounded-full font-bold py-2 px-4 mx-1 btn-accent hover:btn-primary">
+                Post a Job
+              </button>
+            </Link>
+          )}
+
             {isLoggedIn ? (
             <Link href="/">
               <button
